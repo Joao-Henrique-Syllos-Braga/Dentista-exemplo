@@ -261,7 +261,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem; 
+  padding: 1rem;
+  margin: 4rem;
 }
 
 .sobre h1 {
@@ -279,9 +280,63 @@ body {
 
 .sobre-container {
   padding: 1rem;
-  width: min(1000px, 90%);
+  width: min(1000px, 90vw);
 }
 
+.depoimentos {
+  width: 100%;
+  height: auto;
+  background-color: var(--cor-fundo2);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dp-title {
+  margin-top: 2rem;
+}
+
+.dp-cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 2rem;
+}
+
+.dp-card {
+  background-color: var(--cor-fundo1);
+  padding: 2rem;
+  border-radius: 32px;
+  display: flex;
+}
+
+.dp-card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dp-card-title {
+  color: black;
+  font-size: 20px;
+}
+
+.dp-card-text {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.dp-card-container i {
+  color: var(--cor1);
+  font-size: 20px;
+}
+
+@media (max-width: 1228px) {
+  .srv-cards {
+    grid-template-columns: 380px 380px;
+  }
+}
 @media (max-width: 1028px) {
   .hero {
     flex-direction: column;
@@ -317,10 +372,15 @@ body {
   .bnef-card h2 {
     font-size: 20px;
   }
-
+  .dp-cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 390px;
+    gap: 2rem;
+  }
 }
 
-@media (max-width: 1228px) {
+@media (max-width: 760px) {
   .srv-cards {
     grid-template-columns: 380px;
   }
