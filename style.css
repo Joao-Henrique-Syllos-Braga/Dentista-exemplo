@@ -300,9 +300,11 @@ body {
 
 .dp-cards {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: grid;
   grid-template-columns: 340px 340px 340px;
   gap: 2rem;
+
 }
 
 .dp-card {
@@ -330,6 +332,41 @@ body {
 .dp-card-container i {
   color: var(--cor1);
   font-size: 20px;
+}
+
+.agendar {
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agendar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.agendar-title {
+  color: var(--cor1);
+  font-size: 36px;
+}
+
+.agendar-btn {
+  padding: 1rem 2rem;
+  background-color: var(--cor2);
+  color: var(--cor-fundo1);
+  text-decoration: none;
+  font-weight: bolder;
+  border-radius: 1rem;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.agendar-btn:hover {
+  background-color: var(--cor3);
 }
 
 @media (max-width: 1228px) {
@@ -383,5 +420,16 @@ body {
 @media (max-width: 760px) {
   .srv-cards {
     grid-template-columns: 380px;
+  }
+
+  .agendar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .agendar-btn {
+    width: 70vw;
+    text-align: center;
   }
 }
